@@ -2,6 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  const galleryImages = [
+
+    {img: ''}
+  ]
   
   return (
     <div className="App">
