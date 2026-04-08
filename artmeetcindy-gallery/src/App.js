@@ -1,3 +1,4 @@
+import CrochetGallery from './components/crochet-gallery';
 import logo from './logo.svg';
 import './App.css';
 
@@ -5,25 +6,13 @@ function App() {
 
   const galleryImages = [
 
-    {img: ''}
+    {img: 'artmeetcindy-gallery/public/logo512.png'},
   ]
   
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          ArtMeetCindy Gallery
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <strong>Crochet Gallery</strong>
+      <CrochetGallery galleryImages={galleryImages} />
     </div>
   );
 }
